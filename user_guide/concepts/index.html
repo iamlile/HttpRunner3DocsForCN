@@ -486,9 +486,11 @@
                 
                 <h1 id="_1">概念</h1>
 <h2 id="debugtalkpy">debugtalk.py</h2>
-<p>基于约定大于配置的原则，每个项目有且只有一个debuugtalk.py，该文件拥有多种功能。
-* 作为项目根路径的锚，测试用例中的相对路径（例如引用测试用例或CSV文件）都基于此根路径。
-* 存储自定义的python函数，在测试用例中调用的函数均在此文件中定义</p>
+<p>基于约定大于配置的原则，每个项目有且只有一个debugtalk.py，该文件拥有多种功能。</p>
+<ul>
+<li>作为项目根路径的锚，测试用例中的相对路径（例如引用测试用例或CSV文件）都基于此根路径。</li>
+<li>存储自定义的python函数，在测试用例中调用的函数均在此文件中定义</li>
+</ul>
 <h2 id="_2">变量优先级</h2>
 <p>有几种不同类型的变量，优先级可能会令人困惑。 避免混淆的最好方法是使用不同的变量名。 但是，如果必须使用相同的变量名，则应该了解优先级策略。</p>
 <h3 id="_3">测试用例</h3>
@@ -521,11 +523,13 @@ teststeps:
         url: /$varA/$varB/$varC # varA=&quot;step2A&quot;, varB=&quot;extractVarB&quot;, varC=&quot;configC&quot;
         method: GET
 </code></pre>
-<p>在一个测试用例中，变量优先级如下：
-* step variables &gt; extract variables, 例如：step 2, varA="step2A"
-* parameter variables &gt; config variables, 例如：step 1, varB="paramB1"
-* extracted variables &gt; parameter variables &gt; config variables, 例如：step 2, varB="extractVarB"
-* config variables的优先级最低，例如：step 1/2, varC="configC"</p>
+<p>在一个测试用例中，变量优先级如下：</p>
+<ul>
+<li>step variables &gt; extract variables, 例如：step 2, varA="step2A"</li>
+<li>parameter variables &gt; config variables, 例如：step 1, varB="paramB1"</li>
+<li>extracted variables &gt; parameter variables &gt; config variables, 例如：step 2, varB="extractVarB"</li>
+<li>config variables的优先级最低，例如：step 1/2, varC="configC"</li>
+</ul>
 <h3 id="_4">测试套件</h3>
 <pre><code class="language-yaml">config:
     name: xxx
