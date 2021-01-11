@@ -860,9 +860,11 @@
 <p>当产品进入被测状态后，最有效率的方式是捕获HTTP请求，利用HAR文件生成测试用例。详情请看<a href="../record%26generate%20testcase/">录制&amp;生成测试用例</a></p>
 <p>基于生成的pytest用例，你可以根据需要进行调整，从而需要更多的了解用例格式。</p>
 <h2 id="_3">用例结构</h2>
-<p>每个用例都是<code>HttpRunner</code>的子类，且必须包含属性：<code>config</code>和<code>teststeps</code>。
-* <code>config</code>：配置测试用例，包含 <code>base_url</code>, <code>verify</code>, <code>variables</code>, <code>export</code>
-* <code>teststeps</code>：测试步骤的列表，每个步骤都对应一个API请求或另一个用例的引用，另外<code>variables/extract/validate/hooks</code>支持创建极其复杂的测试用例。</p>
+<p>每个用例都是<code>HttpRunner</code>的子类，且必须包含属性：<code>config</code>和<code>teststeps</code>。</p>
+<ul>
+<li><code>config</code>：配置测试用例，包含 <code>base_url</code>, <code>verify</code>, <code>variables</code>, <code>export</code></li>
+<li><code>teststeps</code>：测试步骤的列表，每个步骤都对应一个API请求或另一个用例的引用，另外<code>variables/extract/validate/hooks</code>支持创建极其复杂的测试用例。</li>
+</ul>
 <pre><code class="language-python">from httprunner import HttpRunner, Config, Step, RunRequest, RunTestCase
 
 
@@ -935,7 +937,7 @@ if __name__ == &quot;__main__&quot;:
 <h3 id="variables">variables(可选的)</h3>
 <p>指定用例的通用参数。每个测试步骤都可以引用config variables。也就是说，step variables 优先级高于 config variables.</p>
 <h3 id="verify">verify(可选的)</h3>
-<p>指定是否验证服务器的TLS证书。 如果我们想记录测试用例执行的HTTP流量，这将特别有用，因为如果没有设置verify或将其设置为True，则会发生SSLError。</p>
+<p>指定是否验证服务器的<a href="https://www.websecurity.digicert.com/zh/cn/security-topics/what-is-ssl-tls-https">TLS证书</a> 。 如果我们想记录测试用例执行的HTTP流量，这将特别有用，因为如果没有设置verify或将其设置为True，则会发生SSLError。</p>
 <h3 id="export">export(可选的)</h3>
 <p>指定输出的测试用例变量。将每个测试用例看作一个黑盒，config variables是输入变量，config export是输出变量。当一个测试用例在另一个测试用例的步骤中被引用时，config export将被提取并在随后的测试步骤中使用。</p>
 <h2 id="teststeps">teststeps</h2>
