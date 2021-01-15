@@ -13,19 +13,19 @@
         <meta name="author" content="在路上">
       
       
-      <link rel="shortcut icon" href="/assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
-        <title>HttpRunner V3.x中文文档</title>
+        <title>名词解释(step/case/suite) - HttpRunner V3.x中文文档</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.3b61ea93.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3b61ea93.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
         
       
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#stepcasesuite" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -74,7 +79,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="/." title="HttpRunner V3.x中文文档" class="md-header-nav__button md-logo" aria-label="HttpRunner V3.x中文文档">
+    <a href="../.." title="HttpRunner V3.x中文文档" class="md-header-nav__button md-logo" aria-label="HttpRunner V3.x中文文档">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -93,7 +98,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              
+              名词解释(step/case/suite)
             
           </span>
         </div>
@@ -167,7 +172,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="HttpRunner V3.x中文文档" class="md-nav__button md-logo" aria-label="HttpRunner V3.x中文文档">
+    <a href="../.." title="HttpRunner V3.x中文文档" class="md-nav__button md-logo" aria-label="HttpRunner V3.x中文文档">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -198,7 +203,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/." class="md-nav__link">
+    <a href="../.." class="md-nav__link">
       介绍
     </a>
   </li>
@@ -211,7 +216,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/install/" class="md-nav__link">
+    <a href="../../install/" class="md-nav__link">
       安装
     </a>
   </li>
@@ -224,7 +229,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/scaffold/" class="md-nav__link">
+    <a href="../../scaffold/" class="md-nav__link">
       快速开始(脚手架)
     </a>
   </li>
@@ -235,12 +240,14 @@
       
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       基础概念
@@ -259,11 +266,77 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="/concepts/step_case_suite/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        名词解释(step/case/suite)
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       名词解释(step/case/suite)
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#teststep" class="md-nav__link">
+    测试步骤（teststep）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testcase" class="md-nav__link">
+    测试用例（testcase）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testsuite" class="md-nav__link">
+    测试用例集（testsuite）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    测试场景
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    项目根目录
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -274,7 +347,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/debugtalk.py/" class="md-nav__link">
+    <a href="../debugtalk.py/" class="md-nav__link">
       debugtalk.py
     </a>
   </li>
@@ -287,7 +360,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/param_priority/" class="md-nav__link">
+    <a href="../param_priority/" class="md-nav__link">
       变量优先级
     </a>
   </li>
@@ -300,7 +373,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/structure/" class="md-nav__link">
+    <a href="../structure/" class="md-nav__link">
       项目结构
     </a>
   </li>
@@ -313,7 +386,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/testcase_structure/" class="md-nav__link">
+    <a href="../testcase_structure/" class="md-nav__link">
       测试用例结构
     </a>
   </li>
@@ -326,7 +399,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/hook/" class="md-nav__link">
+    <a href="../hook/" class="md-nav__link">
       hook机制
     </a>
   </li>
@@ -339,7 +412,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/dot-env/" class="md-nav__link">
+    <a href="../dot-env/" class="md-nav__link">
       环境变量
     </a>
   </li>
@@ -352,7 +425,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/testcase-layer/" class="md-nav__link">
+    <a href="../testcase-layer/" class="md-nav__link">
       测试用例分层
     </a>
   </li>
@@ -365,7 +438,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/parameters/" class="md-nav__link">
+    <a href="../parameters/" class="md-nav__link">
       参数化数据驱动
     </a>
   </li>
@@ -378,7 +451,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/security/" class="md-nav__link">
+    <a href="../security/" class="md-nav__link">
       信息安全
     </a>
   </li>
@@ -391,7 +464,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/concepts/upload-case/" class="md-nav__link">
+    <a href="../upload-case/" class="md-nav__link">
       文件上传场景
     </a>
   </li>
@@ -433,7 +506,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/user_guide/record%26generate%20testcase/" class="md-nav__link">
+    <a href="../../user_guide/record%26generate%20testcase/" class="md-nav__link">
       录制&生成测试用例
     </a>
   </li>
@@ -446,7 +519,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/user_guide/write_testcase/" class="md-nav__link">
+    <a href="../../user_guide/write_testcase/" class="md-nav__link">
       编写测试用例(python)
     </a>
   </li>
@@ -459,7 +532,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/user_guide/run_testcase/" class="md-nav__link">
+    <a href="../../user_guide/run_testcase/" class="md-nav__link">
       运行测试用例
     </a>
   </li>
@@ -472,7 +545,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/user_guide/testing_report/" class="md-nav__link">
+    <a href="../../user_guide/testing_report/" class="md-nav__link">
       测试报告
     </a>
   </li>
@@ -485,7 +558,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/user_guide/run_load_test/" class="md-nav__link">
+    <a href="../../user_guide/run_load_test/" class="md-nav__link">
       执行性能测试
     </a>
   </li>
@@ -503,12 +576,139 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#teststep" class="md-nav__link">
+    测试步骤（teststep）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testcase" class="md-nav__link">
+    测试用例（testcase）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testsuite" class="md-nav__link">
+    测试用例集（testsuite）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    测试场景
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    项目根目录
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                  <a href="https://github.com/OnTheWay111/HttpRunner3DocsForCN/edit/master/docs/concepts/step_case_suite.md" title="编辑此页" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="stepcasesuite">名词解释(step/case/suite)</h1>
+<blockquote>
+<p>本文主要来源与httprunner v2.x的名词解释篇，更新了httprunner v3.x的yaml脚本格式</p>
+</blockquote>
+<h2 id="teststep">测试步骤（teststep）</h2>
+<p>测试用例是测试步骤的 有序 集合，而对于接口测试来说，每一个测试步骤应该就对应一个 API 的请求描述。</p>
+<h2 id="testcase">测试用例（testcase）</h2>
+<p>从 2.0 版本开始，HttpRunner 开始对测试用例的定义进行进一步的明确，参考 <a href="https://en.wikipedia.org/wiki/Test_case">wiki</a> 上的描述。</p>
+<blockquote>
+<p>A test case is a specification of the inputs, execution conditions, testing procedure, and expected results that define a single test to be executed to achieve a particular software testing objective, such as to exercise a particular program path or to verify compliance with a specific requirement.</p>
+</blockquote>
+<p>概括下来，一条测试用例（testcase）应该是为了测试某个特定的功能逻辑而精心设计的，并且至少包含如下几点：</p>
+<ul>
+<li>明确的测试目的（achieve a particular software testing objective）</li>
+<li>明确的输入（inputs）</li>
+<li>明确的运行环境（execution conditions）</li>
+<li>明确的测试步骤描述（testing procedure）</li>
+<li>明确的预期结果（expected results）</li>
+</ul>
+<p>对应地，HttpRunner 的测试用例描述方式进行如下设计：</p>
+<ul>
+<li>测试用例应该是完整且独立的，每条测试用例应该是都可以独立运行的；在 HttpRunner 中，每个 YAML/JSON 文件对应一条测试用例。</li>
+<li>测试用例包含 测试脚本 和 测试数据 两部分：<ul>
+<li>测试用例 = 测试脚本 + 测试数据</li>
+<li>测试脚本 重点是描述测试的 业务功能逻辑，包括预置条件、测试步骤、预期结果等，并且可以结合辅助函数（debugtalk.py）实现复杂的运算逻辑；可以将 测试脚本 理解为编程语言中的 类（class）；</li>
+<li>测试数据 重点是对应测试的 业务数据逻辑，可以理解为类的实例化数据；</li>
+<li>测试数据 和 测试脚本 分离后，就可以比较方便地实现数据驱动测试，通过对测试脚本传入一组数据，实现同一业务功能在不同数据逻辑下的测试验证。</li>
+</ul>
+</li>
+</ul>
+<h2 id="testsuite">测试用例集（testsuite）</h2>
+<p>测试用例集 是 测试用例 的 无序 集合，集合中的测试用例应该都是相互独立，不存在先后依赖关系的。</p>
+<p>如果确实存在先后依赖关系怎么办，例如登录功能和下单功能。正确的做法应该是，在下单测试用例的前置步骤中执行登录操作。</p>
+<pre><code class="language-yaml">config:
+    name: &quot;request methods testcase: reference testcase&quot;
 
+teststeps:
+-
+    name: step1
+    testcase: testcases/login.yml
+
+-
+    name: step2
+    api: api/add_cart.yml
+
+-
+    name: step3
+    api: api/make_order.yml
+</code></pre>
+<h2 id="_1">测试场景</h2>
+<p>测试场景 和 测试用例集 是同一概念，都是 测试用例 的 无序 集合。</p>
+<ul>
+<li>接口</li>
+<li>测试用例集</li>
+<li>参数</li>
+<li>变量</li>
+<li>测试脚本（YAML/JSON）</li>
+<li>debugtalk.py</li>
+<li>环境变量</li>
+</ul>
+<h2 id="_2">项目根目录</h2>
+<p>项目根目录以<code>debugtalk.py</code>为锚, 测试用例中的相对路径（例如引用测试用例或CSV文件）都基于此根路径。</p>
+                
+              
               
                 
 
@@ -521,6 +721,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../scaffold/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                快速开始(脚手架)
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../debugtalk.py/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                debugtalk.py
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -542,20 +777,20 @@
       
     </div>
     
-      <script src="/assets/javascripts/vendor.08c56446.min.js"></script>
-      <script src="/assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "/",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "/assets/javascripts/worker/search.8c7e0a7e.min.js"
+            worker: "../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
-        <script src="/js/baidu-tongji.js"></script>
+        <script src="../../js/baidu-tongji.js"></script>
       
     
   </body>

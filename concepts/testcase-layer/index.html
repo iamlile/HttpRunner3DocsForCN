@@ -18,7 +18,7 @@
     
     
       
-        <title>测试报告 - HttpRunner V3.x中文文档</title>
+        <title>测试用例分层 - HttpRunner V3.x中文文档</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              测试报告
+              测试用例分层
             
           </span>
         </div>
@@ -240,12 +240,14 @@
       
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       基础概念
@@ -266,7 +268,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../concepts/step_case_suite/" class="md-nav__link">
+    <a href="../step_case_suite/" class="md-nav__link">
       名词解释(step/case/suite)
     </a>
   </li>
@@ -279,7 +281,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../concepts/debugtalk.py/" class="md-nav__link">
+    <a href="../debugtalk.py/" class="md-nav__link">
       debugtalk.py
     </a>
   </li>
@@ -292,7 +294,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../concepts/param_priority/" class="md-nav__link">
+    <a href="../param_priority/" class="md-nav__link">
       变量优先级
     </a>
   </li>
@@ -305,7 +307,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../concepts/structure/" class="md-nav__link">
+    <a href="../structure/" class="md-nav__link">
       项目结构
     </a>
   </li>
@@ -318,7 +320,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../concepts/testcase_structure/" class="md-nav__link">
+    <a href="../testcase_structure/" class="md-nav__link">
       测试用例结构
     </a>
   </li>
@@ -331,7 +333,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../concepts/hook/" class="md-nav__link">
+    <a href="../hook/" class="md-nav__link">
       hook机制
     </a>
   </li>
@@ -344,130 +346,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../concepts/dot-env/" class="md-nav__link">
+    <a href="../dot-env/" class="md-nav__link">
       环境变量
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../../concepts/testcase-layer/" class="md-nav__link">
-      测试用例分层
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../../concepts/parameters/" class="md-nav__link">
-      参数化数据驱动
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../../concepts/security/" class="md-nav__link">
-      信息安全
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../../concepts/upload-case/" class="md-nav__link">
-      文件上传场景
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  
-
-
-  
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
-    
-    <label class="md-nav__link" for="nav-5">
-      用户引导
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="用户引导" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon"></span>
-        用户引导
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../record%26generate%20testcase/" class="md-nav__link">
-      录制&生成测试用例
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../write_testcase/" class="md-nav__link">
-      编写测试用例(python)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../run_testcase/" class="md-nav__link">
-      运行测试用例
     </a>
   </li>
 
@@ -488,12 +368,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        测试报告
+        测试用例分层
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      测试报告
+      测试用例分层
     </a>
     
       
@@ -510,16 +390,76 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#html" class="md-nav__link">
-    内置html报告
+  <a href="#_2" class="md-nav__link">
+    测试用例分层模型
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#allure" class="md-nav__link">
-    allure报告
+  <a href="#_3" class="md-nav__link">
+    分层描述详解
   </a>
+  
+    <nav class="md-nav" aria-label="分层描述详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    接口定义(API)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testcase" class="md-nav__link">
+    测试用例(testcase)
+  </a>
+  
+    <nav class="md-nav" aria-label="测试用例(testcase)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    引用测试用例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testsuite" class="md-nav__link">
+    测试用例集(testsuite)
+  </a>
+  
+    <nav class="md-nav" aria-label="测试用例集(testsuite)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    非参数化场景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    参数化场景(parameters)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -537,7 +477,127 @@
 
 
   <li class="md-nav__item">
-    <a href="../run_load_test/" class="md-nav__link">
+    <a href="../parameters/" class="md-nav__link">
+      参数化数据驱动
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../security/" class="md-nav__link">
+      信息安全
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../upload-case/" class="md-nav__link">
+      文件上传场景
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+    
+    <label class="md-nav__link" for="nav-5">
+      用户引导
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="用户引导" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon"></span>
+        用户引导
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../user_guide/record%26generate%20testcase/" class="md-nav__link">
+      录制&生成测试用例
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../user_guide/write_testcase/" class="md-nav__link">
+      编写测试用例(python)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../user_guide/run_testcase/" class="md-nav__link">
+      运行测试用例
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../user_guide/testing_report/" class="md-nav__link">
+      测试报告
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../user_guide/run_load_test/" class="md-nav__link">
       执行性能测试
     </a>
   </li>
@@ -573,16 +633,76 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#html" class="md-nav__link">
-    内置html报告
+  <a href="#_2" class="md-nav__link">
+    测试用例分层模型
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#allure" class="md-nav__link">
-    allure报告
+  <a href="#_3" class="md-nav__link">
+    分层描述详解
   </a>
+  
+    <nav class="md-nav" aria-label="分层描述详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    接口定义(API)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testcase" class="md-nav__link">
+    测试用例(testcase)
+  </a>
+  
+    <nav class="md-nav" aria-label="测试用例(testcase)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    引用测试用例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testsuite" class="md-nav__link">
+    测试用例集(testsuite)
+  </a>
+  
+    <nav class="md-nav" aria-label="测试用例集(testsuite)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    非参数化场景
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    参数化场景(parameters)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -598,40 +718,119 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/OnTheWay111/HttpRunner3DocsForCN/edit/master/docs/user_guide/testing_report.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/OnTheWay111/HttpRunner3DocsForCN/edit/master/docs/concepts/testcase-layer.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="_1">测试报告</h1>
-<p>受益于pytest的集成，HttpRunner v3.x可以利用pytest所有插件，包括<code>pytest-html</code>和<code>allure-pytest</code></p>
-<h2 id="html">内置html报告</h2>
-<p><code>pytest-html</code>插件随HttpRunner一期安装。当你运行测试用例想生成html报告时，可以在命令行中添加<code>--html</code></p>
-<pre><code class="language-shell">$ hrun /path/to/testcase --html=report.html
+                <h1 id="_1">测试用例分层</h1>
+<h2 id="_2">测试用例分层模型</h2>
+<p>在自动化测试领域，自动化测试用例的可维护性是极其重要的因素，直接关系到自动化测试能否持续有效地在项目中开展。</p>
+<p>概括来说，测试用例分层机制的核心是将接口定义、测试步骤、测试用例、测试场景进行分离，单独进行描述和维护，从而尽可能地减少自动化测试用例的维护成本。</p>
+<p>逻辑关系图如下所示：</p>
+<p><img alt="img_1.png" src="../img_1.png" />
+同时，强调如下几点核心概念：</p>
+<ul>
+<li>测试用例（testcase）应该是完整且独立的，每条测试用例应该是都可以独立运行的</li>
+<li>测试用例是测试步骤（teststep）的 有序 集合，每一个测试步骤对应一个 API 的请求描述</li>
+<li>测试用例集（testsuite）是测试用例的 无序 集合，集合中的测试用例应该都是相互独立，不存在先后依赖关系的；如果确实存在先后依赖关系，那就需要在测试用例中完成依赖的处理</li>
+</ul>
+<p>如果对于上述第三点感觉难以理解，不妨看下上图中的示例：</p>
+<ul>
+<li>testcase1 依赖于 testcase2，那么就可以在测试步骤（teststep12）中对 testcase2 进行引用，然后 testcase1 就是完整且可独立运行的；</li>
+<li>在 testsuite 中，testcase1 与 testcase2 相互独立，运行顺序就不再有先后依赖关系了。</li>
+</ul>
+<h2 id="_3">分层描述详解</h2>
+<p>理解了测试用例分层模型，接下来我们再来看下在分层模型下，接口、测试用例、测试用例集的描述形式。</p>
+<h3 id="api">接口定义(API)</h3>
+<p>注意：为了简单，在HttpRunner v2.x中的API概念已经被取消了。你可以将API定义为只有一个请求步骤的测试用例。</p>
+<h3 id="testcase">测试用例(testcase)</h3>
+<h4 id="_4">引用测试用例</h4>
+<p>在测试用例的测试步骤中，可以引用其它测试用例。通过这种方式，可以在避免重复描述的同时，解决测试用例的依赖关系，从而保证每个测试用例都是独立可运行的。</p>
+<p>在测试步骤（teststep）中，可通过 testcase 字段引用其它测试用例，引用方式为对应测试用例文件的路径，绝对路径或相对路径均可。推荐使用相对路径，路径基准为项目根目录，即 debugtalk.py 所在的目录路径。</p>
+<p>例如，假设有一个用例，实现了对获取 token 功能的测试；在很多其它功能中都会依赖于获取 token 的功能，如果将该功能的测试步骤脚本拷贝到其它功能的测试用例中，那么就会存在大量重复，当需要对该部分进行修改时就需要修改所有地方，显然不便于维护。</p>
+<p>比较好的做法是，在其它功能的测试用例（如创建用户）中，引用获取 token 功能的测试用例（testcases/setup.yml）作为一个测试步骤，从而创建用户（"create user and check result."）这个测试用例也变得独立可运行了。</p>
+<pre><code class="language-yaml">config:
+    name: &quot;request methods testcase: reference testcase&quot;
+    id: create_user
+    base_url: &quot;http://127.0.0.1:5000&quot;
+    variables:
+        uid: 9001
+        device_sn: &quot;TESTCASE_CREATE_XXX&quot;
+    export: session_token
+
+teststeps:
+-
+    name: create user and check result
+    variables:
+        foo1: testcase_ref_bar1
+        expect_foo1: testcase_ref_bar1
+    testcase: testcases/demo_testcase_request.yml
+    export:
+        - session_token
+-
+    name: check_and_create
+    variables:
+        token: $session_token
+    testcase: testcases/deps/check_and_create.yml
 </code></pre>
-<p>如果想创建一个独立的、更加方便共享测试结果的html报告，可以在命令行中添加<code>--self-contained-html</code></p>
-<pre><code class="language-shell">$ hrun /path/to/testcase --html=report.html --self-contained-html
+<h3 id="testsuite">测试用例集(testsuite)</h3>
+<p>当测试用例数量比较多以后，为了方便管理和实现批量运行，通常需要使用测试用例集来对测试用例进行组织。</p>
+<p>在前文的测试用例分层模型中也强调了，测试用例集（testsuite）是测试用例的 无序 集合，集合中的测试用例应该都是相互独立，不存在先后依赖关系的；如果确实存在先后依赖关系，那就需要在测试用例中完成依赖的处理。</p>
+<p>因为是无序集合，因此测试用例集的描述形式会与测试用例有些不同，在每个测试用例集文件中，第一层级存在两类字段：</p>
+<ul>
+<li>config: 测试用例集的总体配置参数</li>
+<li>testcases: 值为无序数组，在引用测试用例时，也可以指定variables，实现对引用测试用例中variables的覆盖。</li>
+</ul>
+<h4 id="_5">非参数化场景</h4>
+<pre><code class="language-yaml">
+config:
+  name: test suite demo
+  variables:  # testsuite config variables
+    foo1: lalalla
+    var_a: ${gen_random_string(5)}
+    var_b: $var_a
+  base_url: &quot;http://127.0.0.1:5000&quot;
+
+testcases:
+-
+  name: test case 1
+  variables:  # testcase variables
+    uid: 1000
+    var_c: ${gen_random_string(5)}
+    var_d: $var_c
+  testcase: /path/to/testcase1
+  export: [&quot;varA&quot;, &quot;varB&quot;]  # export variables
+-
+  name: test case 2
+  variables:  # testcase variables
+    uid: 1001
+    var_c: ${gen_random_string(5)}
+    var_d: $var_c
+  testcase: /path/to/testcase2
 </code></pre>
-<p>详情请看<a href="https://pypi.org/project/pytest-html/">pytest-html</a></p>
-<h2 id="allure">allure报告</h2>
-<p><code>allure-pytest</code>是HttpRunner的可选依赖项，所以如果想生成allure报告时，需要单独安装：</p>
-<pre><code class="language-shell">pip install allure-pytest
+<h4 id="parameters">参数化场景(parameters)</h4>
+<p>对于参数化场景，可通过parameters实现，描述形式如下所示。</p>
+<pre><code class="language-yaml">
+config:
+  name: test suite demo
+  variables:  # testsuite config variables
+    foo1: lalalla
+  base_url: &quot;http://127.0.0.1:5000&quot;
+
+testcases:
+-
+  name: test case 1
+  variables:  # testcase variables
+    uid: 1000
+    var_c: ${gen_random_string(5)}
+  parameters:
+    uid: [101, 102, 103]
+    var_c: [&quot;demo1&quot;, &quot;demo2&quot;, &quot;demo3&quot;]
+    apkchannel: ${P(data/vip.csv)}
+  testcase: /path/to/testcase1
 </code></pre>
-<p>或者在安装httprunner时选择安装：</p>
-<pre><code class="language-shell">pip install &quot;httprunner[allure]&quot;
-</code></pre>
-<p>一旦<code>allure-pytest</code>安装好，可以用<code>hrun/pytest</code>使用如下功能：
-* <code>--alluredir = DIR</code>：在指定目录中生成“魅力”报告（可能不存在）
-* <code>--clean-alluredir</code>：清理alluredir文件夹（如果存在）
-* <code>--allure-no-capture</code>：不要将pytest捕获的日志记录/ stdout / stderr附加到报告中</p>
-<p>要使Allure侦听器能够在测试执行期间收集结果，只需添加--alluredir选项，并提供指向应存储结果的文件夹的路径。 例如。：</p>
-<pre><code class="language-shell">$ hrun /path/to/testcase --alluredir=/tmp/my_allure_results
-</code></pre>
-<p>要在测试完成后查看实际报告，您需要使用Allure命令行实用程序从结果生成报告。</p>
-<pre><code class="language-shell">$ allure serve /tmp/my_allure_results
-</code></pre>
-<p>此命令将在默认浏览器中显示您生成的报告
-详情请看：<a href="https://docs.qameta.io/allure/#_pytest">allure-pytest</a></p>
+<p>参数化后，parameters中的变量将采用笛卡尔积组合形成参数列表，依次覆盖variables中的参数，驱动测试用例的运行。</p>
                 
               
               
@@ -650,7 +849,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../run_testcase/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../dot-env/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -659,19 +858,19 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                运行测试用例
+                环境变量
               </div>
             </div>
           </a>
         
         
-          <a href="../run_load_test/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../parameters/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                执行性能测试
+                参数化数据驱动
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
