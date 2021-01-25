@@ -500,9 +500,52 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        执行性能测试
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
     <a href="./" class="md-nav__link md-nav__link--active">
       执行性能测试
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#locust" class="md-nav__link">
+    启动locust
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    注意事项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#locust_1" class="md-nav__link">
+    locust所有功能
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -530,6 +573,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#locust" class="md-nav__link">
+    启动locust
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    注意事项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#locust_1" class="md-nav__link">
+    locust所有功能
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -554,6 +626,7 @@
 locust 1.0.3
 </code></pre>
 <p>为了充分利用它们，您可以运行locusts -h来查看帮助，并且您会发现它与locust -h相同。</p>
+<h2 id="locust">启动locust</h2>
 <p>唯一的区别是<code>-f /-locustfile</code>参数。 当使用<code>YAML/JSON</code>测试用例文件指定-f时，它将首先转换为pytest，然后使用HttpRunner的内置locustfile（httprunner/ext/locust/locustfile.py）运行负载测试。</p>
 <pre><code class="language-shell">$ locusts -f examples/postman_echo/request_methods/request_with_variables.yml
 2020-06-18 18:14:29.877 | INFO     | httprunner.make:make_testcase:317 - start to make testcase: /Users/debugtalk/MyProjects/HttpRunner-dev/HttpRunner/examples/postman_echo/request_methods/request_with_variables.yml
@@ -565,6 +638,10 @@ All done! ✨ 🍰 ✨
 [2020-06-18 18:14:30,241] LeodeMacBook-Pro.local/INFO/locust.main: Starting web interface at http://:8089
 [2020-06-18 18:14:30,249] LeodeMacBook-Pro.local/INFO/locust.main: Starting Locust 1.0.3
 </code></pre>
+<h2 id="_2">注意事项</h2>
+<p>YAML性能测试脚本，当使用locusts执行性能测试时，config 中 parameters中的变量需要在variables声明，否则会发生Error：参数找不到。
+<img alt="img_3.png" src="../img_3.png" /></p>
+<h2 id="locust_1">locust所有功能</h2>
 <p>在这种情况下，您可以使用Locust的所有功能。</p>
 <pre><code class="language-shell">$ locusts -h                                                                 
 Usage: locust [OPTIONS] [UserClass ...]
