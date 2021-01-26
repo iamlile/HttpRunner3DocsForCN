@@ -415,6 +415,19 @@
     引用环境变量
   </a>
   
+    <nav class="md-nav" aria-label="引用环境变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#env_1" class="md-nav__link">
+    指定.env执行暂未找到运行方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -638,6 +651,19 @@
     引用环境变量
   </a>
   
+    <nav class="md-nav" aria-label="引用环境变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#env_1" class="md-nav__link">
+    指定.env执行暂未找到运行方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -683,22 +709,14 @@ $ echo $Password
 </code></pre>
 <h3 id="env">[推荐]通过 .env 文件设置环境变量</h3>
 <p>除了这种方式，HttpRunner 还借鉴了 <a href="https://docs.pipenv.org/advanced/#automatic-loading-of-env">pipenv 加载 .env 的方式</a> 。</p>
-<p>默认情况下，在自动化测试项目的根目录中，创建 .env 文件，并将敏感数据信息放置到其中，存储采用 name=value 的格式：</p>
+<p>默认情况下，在自动化测试项目的根目录中，创建 .env 文件，并将敏感数据信息放置到其中，存储采用 name=value 的格式：
+脚手架生成的接口测试项目中，会自动生成.env文件，可直接在.env中添加环境变量:</p>
 <pre><code class="language-shell">$ cat .env
 UserName=admin
-Password=123456
+# PASSWORD=123456
 PROJECT_KEY=ABCDEFGH
 </code></pre>
-<p>同时，.env 文件不应该添加到代码仓库中，建议将 .env 加入到 .gitignore 中。</p>
-<p>HttpRunner 运行时，会自动将 .env 文件中的内容加载到运行时（RunTime）的环境变量中，然后在运行时中就可以对环境变量进行读取了。</p>
-<p>若需加载不位于自动化项目根目录中的 .env，或者其它名称的 .env 文件（例如 production.env），可以采用 --dot-env-path 参数指定文件路径：</p>
-<pre><code class="language-shell">$ hrun /path/to/testcase.yml --dot-env-path /path/to/.env --log-level debug
-INFO     Loading environment variables from /path/to/.env
-DEBUG    Loaded variable: UserName
-DEBUG    Loaded variable: Password
-DEBUG    Loaded variable: PROJECT_KEY
-...
-</code></pre>
+<p><font color="red">注意：.env不允许有空行，可以注释掉不需要的变量</font></p>
 <h2 id="_5">引用环境变量</h2>
 <p>在 HttpRunner 中内置了函数 environ（简称 ENV），可用于在 YAML/JSON 脚本中直接引用环境变量。</p>
 <pre><code class="language-yaml">teststeps:
@@ -739,6 +757,16 @@ def get_encrypt_password():
             password: ${get_encrypt_password()}
         validate:
             - eq: [status_code, 200]
+</code></pre>
+<h3 id="env_1">指定.env执行暂未找到运行方法</h3>
+<p><font color="red">注意：httprunner v2.x支持，但是v3.x暂不支持以下方式运行指定.env。</font></p>
+<p>若需加载不位于自动化项目根目录中的 .env，或者其它名称的 .env 文件（例如 production.env），可以采用 --dot-env-path 参数指定文件路径：</p>
+<pre><code class="language-shell">$ hrun /path/to/testcase.yml --dot-env-path /path/to/.env --log-level debug
+INFO     Loading environment variables from /path/to/.env
+DEBUG    Loaded variable: UserName
+DEBUG    Loaded variable: Password
+DEBUG    Loaded variable: PROJECT_KEY
+...
 </code></pre>
                 
               
